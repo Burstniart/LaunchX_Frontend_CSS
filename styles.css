@@ -1,0 +1,50 @@
+body {
+    background-color: gray;
+}
+
+
+/* Navigation bar that stays on top */
+.topnav {
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #79869C;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 14px 16px;
+    font-weight: bold;
+    font-size: 17px;
+    position:relative;
+    left: 30%;
+    width: 10%;
+    text-align: center;
+  }
+  
+  /* Remove when finished */
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  /* ends temporary items */
+  .topnav a.home {
+    color: #2949C7;
+    font-size: 24;
+    position:relative;
+    left: 10%;
+      
+  }
+  .topnav a.hoax{
+    background: #3353D1;
+    color: #F1F3F8;
+    border-radius: 5%;
+  }
+  
