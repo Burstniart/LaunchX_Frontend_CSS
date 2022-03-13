@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,11 +8,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <section>
-        <!-- temporal -->
-    <div class="imagen"></div>
-    <!-- fin temporal -->
+   
+    <div class="imagen1">
+        <img  src="./nurse.webp">
+    </div>
     <div class="topnav">
         <a class="home">Vaccination</a>
         <a >Database</a>
@@ -33,26 +33,124 @@
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
           </svg>
-        <a>Selected Vaccines</a>
+          <a>Selected Vaccines</a>
+        </div>
     </div>
-    <div class="agenda">
-        <p>Schedule your vaccinations</p>
-        <form>
+    <p class="info1">Schedule your vaccinations</p>
+    <form class="form-inline" action="">
+        <div class="acol">
             <label for="location">Location</label>
-            <select id="location" name="location">
-                <option
+            <select id="location" name="location" aria-placeholder="Country">
+                <option value="mexico">Mexico</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
             </select>
-        </form>
+        </div>
+        <div class="acol">
+            <label for='date'>Date</label>
+            <input type="date">
+        </div>
+        <div class="acol">
+            <label for="vaxBrand">Vaccine Type</label>
+            <select id="vaxBrand" name="vaxBrand">
+                <option value="astrazeneca">AstraZeneca</option>
+                <option value="sinovac">Sinovac</option>
+                <option value="pfizer">Pfizer</option>
+                <option value="moderna">Moderna</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    <!-- <section></section> -->
+    <img src="vaxLogos.png" alt="Brands" class="logos">
+
+    <div class="text1 theWhy">
+        <p class="title otherT">Why should I vaccine?</p>
+        <p>In order to avoid any doubts about getting the COVID-19 vaccine, identify 4 benefits of COVID-19 vaccination :</p>
     </div>
-    
-    </section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <div class="reasons">
+        <div class="rCard">
+            <img src="" alt="" >
+            <div class="rContainer">
+              <h4>Minimize the spread of viruses</h4>
+              <p>Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
+            </div>
+        </div>
+        <div class="rCard">
+            <img src="" alt="" >
+            <div class="rContainer">
+              <h4>Forming antibodies</h4>
+              <p>COVID-19 vaccine proven to help shape antibody response for immune system</p>
+            </div>
+        </div>
+        <div class="rCard">
+            <img src="" alt="" >
+            <div class="rContainer">
+              <h4>Proteting people nearby</h4>
+              <p>The benefit of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
+            </div>
+        </div>
+        <div class="rCard">
+            <img src="" alt="" >
+            <div class="rContainer">
+              <h4>Creating group immunity</h4>
+              <p>COVID-19 vaccination is also beneficial for creating group immunity or herd immunity</p>
+            </div>
+        </div>
+    </div>
+    <div class="preps">
+        <p class="title2">Preparations Before Vaccine</p>
+        <p class="shortBox">The succes of vaccines is strongly influenced by the strength of the body's immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work:</p>
+    </div>
+    <div class="imagen2">
+        <img src="doctor.png" alt="doctor">
+    </div>
+    <div class='accordeon'>
+        <div class="acco">
+            <button class="collapsible miniacc active">
+                <p>Avoid alcoholic beverages</p>
+            </button>
+            <div class="content"><p>This assigment has taken me forever</p></div>    
+            <button class="collapsible miniacc active">
+                <p>Avoid stress</p>
+            </button>
+            <div class="content"><p>Stress has profound effect on immune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</p></div>
+            <button class="collapsible miniacc active">
+                <p>Eat healthy food</p>
+            </button>
+            <div class="content"><p>I'm running on instant soup and energy drinks</p></div>
+            <button class="collapsible miniacc active">
+                <p>Get enough sleep</p>
+            </button>
+            <div class="content"><p>I have dreamed of fixing divs</p></div>
+            <button class="collapsible miniacc active">
+                <p>Excersise or physical activity</p>
+            </button>
+            <div class="content"><p>Yeah that helps to think a little bit</p></div>
+        </div>
+    </div>
+    <!-- <section></section> -->
+    <!-- <section></section> -->
+    <!-- <section></section> -->
 
     <footer>
 
     </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
 </body>
 </html>
