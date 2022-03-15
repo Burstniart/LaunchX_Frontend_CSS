@@ -11,6 +11,8 @@ Para esta página comencé realizando un bosquejo de la misma, destacando y dife
 
 ### Aquí se encuentra el código de la página:
 <a href="vax.html">Vaccination</a>
+<br>
+<a href="styles.css">Estilos</a>
 
 <hr>
 
